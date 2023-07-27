@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" id="result" placeholder="0" readonly>
+                </div>
+                <div>
+                    <input type="button" id="ac" value="AC" onclick="clearBox('')">
+                    <input type="button" value="DE" onclick="clearLastDigit()">
+                    <input type="button" id="dot" onclick="display('.')" value=".">
+                    <input type="button" id="div" onclick="display('/')" value="/">
+                </div>
+                <div>
+                    <input type="button" id="seven" onclick="display('7')" value="7">
+                    <input type="button" id="eight" onclick="display('8')"  value="8">
+                    <input type="button" id="nine" onclick="display('9')" value="9">
+                    <input type="button" id="mul" onclick="display('*')" value="x">
+                </div>
+                <div>
+                    <input type="button" id="four" onclick="display('4')" value="4">
+                    <input type="button" id="five" onclick="display('5')" value="5">
+                    <input type="button" id="six" onclick="display('6')" value="6">
+                    <input type="button" id="sub" onclick="display('-')" value="-">
+                </div>
+                <div>
+                    <input type="button" id="one" onclick="display('1')" value="1">
+                    <input type="button" id="two" onclick="display('2')" value="2">
+                    <input type="button" id="three" onclick="display('3')" value="3">
+                    <input type="button" id="add" onclick="display('+')" value="+">
+                </div>
+                <div>
+                    <input type="button" id="d-zero" onclick="display('00')" value="00">
+                    <input type="button" id="zero" onclick="display('0')" value="0">
+                    <input type="button" id="equal" onclick="calculate()"  value="=" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>
